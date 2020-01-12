@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/colorPrimaryDark">
+    <TextView
+        android:id="@+id/textViewQuestion"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/question_1"
+        android:layout_above="@+id/textViewScore"
+        android:textColor="#FFFFFF"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:padding="10dp"/>
+
+
+    <TextView
+        android:id="@+id/textViewScore"
+        android:textColor="#FFFFFF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/buttomPanel"
+        android:layout_centerHorizontal="true"
+        android:text="Score: 0/10" />
+
+    <LinearLayout
+        android:id="@+id/buttomPanel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:padding="10dp">
+        <Button
+            android:id="@+id/buttonTrue"
+            android:text="@string/answer_true"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginEnd="5dp"></Button>
+        <Button
+            android:id="@+id/buttonFalse"
+            android:text="@string/answer_false"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="5dp"></Button>
+    </LinearLayout>
+
+</RelativeLayout>
